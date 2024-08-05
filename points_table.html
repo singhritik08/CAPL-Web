@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Table</title>
+    <link rel="stylesheet" href="./points_table.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col items-center">
+    <!-- head points table  -->
+    <div class="h-20 w-full bg-white border-2 border-slate-400 mt-1 flex items-center justify-center">
+        <a href="#" class="border-2 border-white bg-orange-600 text-white p-2 transform skew-x-12">Points Table</a>
+    </div>
+    <!-- season pop-up  -->
+    <div class="mt-4 w-full flex flex-col place-items-start">
+        <select class="bg-white text-black border-2 border-black rounded-lg p-2">
+            <option value="SEASON 24">SEASON 24</option>
+        </select>
+        <!-- outer div of table  -->
+        <div class="overflow-x-auto mt-8 w-full flex flex-col items-center">
+            <!-- table start -->
+            
+            <table class="bg-white  rounded-[] border-2 border-black w-full lg:w-4/5 xl:w-4/5">
+                <thead>
+                    <!-- table header -->
+                    <tr>
+                        <th class="px-2 py-2 text-center">No.</th>
+                        <th class="px-10 py-2 text-center">Team</th>
+                        <th class="px-4 py-2 text-center">P</th>
+                        <th class="px-4 py-2 text-center">W</th>
+                        <th class="px-3 py-2 text-center">L</th>
+                        <th class="px-3 py-2 text-center">NR</th>
+                        <th class="px-3 py-2 text-center">PTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-2 py-2 text-center">1</td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <img class="w-5 h-5 rounded-full bg-gray-200 border-black border-2" src="rcb.png" alt="RCB">
+                                <span class="ml-2 font-bold text-black">RCB</span>
+                            </div>
+                        </td>
+                        <td class="px-2 py-2 text-center">15</td>
+                        <td class="px-4 py-2 text-center">10</td>
+                        <td class="px-2 py-2 text-center">4</td>
+                        <td class="px-4 py-2 text-center">1</td>
+                        <td class="px-4 py-2 text-center">21</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-center">2</td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <img class="w-5 h-5 rounded-full bg-gray-200 border-black border-2" src="csk.png" alt="CSK">
+                                <span class="ml-2 font-bold text-black">CSK</span>
+                            </div>
+                        </td>
+                        <td class="px-2 py-2 text-center">15</td>
+                        <td class="px-4 py-2 text-center">10</td>
+                        <td class="px-2 py-2 text-center">4</td>
+                        <td class="px-4 py-2 text-center">1</td>
+                        <td class="px-4 py-2 text-center">21</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-center">3</td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <img class="w-5 h-5 rounded-full bg-gray-200 border-black border-2" src="dc.png" alt="DC">
+                                <span class="ml-2 font-bold text-black">DC</span>
+                            </div>
+                        </td>
+                        <td class="px-2 py-2 text-center">15</td>
+                        <td class="px-4 py-2 text-center">10</td>
+                        <td class="px-2 py-2 text-center">4</td>
+                        <td class="px-4 py-2 text-center">1</td>
+                        <td class="px-4 py-2 text-center">21</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-center">4</td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <img class="w-5 h-5 rounded-full bg-gray-200 border-black border-2" src="mi.png" alt="MI">
+                                <span class="ml-2 font-bold text-black">MI</span>
+                            </div>
+                        </td>
+                        <td class="px-2 py-2 text-center">15</td>
+                        <td class="px-4 py-2 text-center">10</td>
+                        <td class="px-2 py-2 text-center">4</td>
+                        <td class="px-4 py-2 text-center">1</td>
+                        <td class="px-4 py-2 text-center">21</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
