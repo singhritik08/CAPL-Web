@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 relative">
+  <!-- NAVBAR STRAT-->
+
+  <div class="bg-[#1f306b] h-20 shadow-lg shadow-slate-600 ">
+    <div class="flex place-content-between">
+      <div class="flex items-center">
+        <i class="fa-solid fa-bars text-white text-3xl ml-5 lg:opacity-0 " id="bar"></i>
+
+        <img src="logo.png" alt="" class="h-20 ml-10 ">
+        <div>
+          <h3 class="text-white text-l font-bold">Coading Age </h3>
+          <h3 class="text-white text-l font-bold">Premier</h3>
+          <h3 class="text-white text-l font-bold">League</h3>
+        </div>
+      </div>
+      <div
+        class="z-20  font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-64  lg:ml-10 hidden md:hidden">
+        <ul class="flex">
+          <li>
+            <a href="" class="pr-10 ">MATCHES</a>
+          </li>
+          <li>
+            <a href="" class="pr-10 ">STATS</a>
+          </li>
+
+          <a href="" class="pr-10 ">POINTS TABLE</a>
+        </ul>
+        <div class="main-wrapper relative group z-40">
+          <button class="pr-10  ">MORE</button>
+          <ul class="dropdown-menu group-hover:block hidden absolute mt-3">
+            <li>
+              <a href=""
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-t-lg place-content-center border-b-2  hover:pl-10 hover:text-2xl ">TEAMS</a>
+            </li>
+            <li>
+              <a href=""
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">PHOTOS</a>
+            </li>
+            <li>
+              <a href=""
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">RESULTS</a>
+            </li>
+            <li>
+              <a href=""
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-b-lg place-content-center  hover:pl-10 hover:text-2xl">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass text-white  text-2xl font-bold mt-8 mr-5" id="icon"></i>
+      </div>
+
+    </div>
+    <div class=" bg-transparent  flex-col justify-center hidden z-20" id="search">
+      <div class="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+        <div class="overflow-hidden z-50 rounded-full relative p-3">
+          <form role="form" class="relative flex z-50 bg-white rounded-full">
+            <input type="text" placeholder="enter your search here"
+              class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none">
+            <button
+              class="bg-[#2e3d71] text-white rounded-full font-semibold px-8 py-4 hover:bg-[#1f306b] focus:bg-[#2e3d71] focus:outline-none">Search</button>
+          </form>
+          <div class="glow glow-1 z-10 bg-pink-400 absolute"></div>
+          <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
+          <div class="glow glow-3 z-30 bg-yellow-400 absolute"></div>
+          <div class="glow glow-4 z-40 bg-[#1f306b] absolute"></div>
+        </div>
+      </div>
+    </div>
+    <div class="z-20  bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[390px] absolute" id="sidebar">
+      <ul>
+        <li>
+          <a href="" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
+        </li>
+        <li>
+          <a href="" class="pl-10 border-b-2 block h-12 place-content-center">STATS</a>
+        </li>
+
+        <a href="" class="pl-10 border-b-2 block h-12 place-content-center">POINTS TABLE</a>
+      </ul>
+      <div class="main-wrapper relative group z-40  ">
+        <button class="pl-10  block h-12">MORE</button>
+        <ul class="dropdown-menu group-hover:block hidden absolute ">
+          <li>
+            <a href=""
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-2xl ml-4">TEAMS</a>
+          </li>
+          <li>
+            <a href=""
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">PHOTOS</a>
+          </li>
+          <li>
+            <a href=""
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">RESULTS</a>
+          </li>
+          <li>
+            <a href=""
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-2xl ml-4">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR END -->
+<div class="-z-20">
+  <div class="c text-3xl font-bold text-white h-16 flex  m-6 rounded sticky ">
+    <div class="w-12"></div>MATCHES
+  </div>
+  <div class="my-5 flex justify-evenly items-center h-10">
+    <div class="relative inline-block">
+      <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-32" id="team-dropdown-button">
+        Teams
+      </button>
+      <div class="absolute left-0 mt-2 w-36 bg-white rounded-md shadow-md hidden" id="team-dropdown-menu">
+        <ul class="list-none">
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+              <div class="flex">Option 1 <img src="csk.jpg" class="h-5 rounded-3xl mx-2"></div>
+            </a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="relative inline-block">
+      <button class="bg-orange-500 hover:bg-orange-700 w-32 text-white font-bold py-2 px-4 rounded " id="season-dropdown-button">
+        Season
+      </button>
+      <div class="absolute right-0 mt-2 w-36 bg-white rounded-md shadow-md hidden" id="season-dropdown-menu">
+        <ul class="list-none" id="f">
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" onclick="updateSeason('Option 1')">Option 1</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" onclick="updateSeason('Option 2')">Option 2</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" onclick="updateSeason('Option 3')">Option 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    class=" bg-gradient-to-r from-blue-950 to-blue-500  text-white text-lg font-bold shadow-lg hover:shadow-2xl transition duration-300 m-8 p-4 rounded-xl md:text-xl md:p-6">
+    Match Details
+  </div>
+  <div
+    class="bg-gradient-to-r from-green-600 to-blue-500 text-white text-lg font-bold shadow-lg hover:shadow-2xl transition duration-300 m-8 p-4 rounded-xl md:text-xl md:p-6 flex justify-between">
+    <div class="flex-2 text-white text-lg font-bold p-2 rounded-l-xl md:w-1/3 w-full hidden relative md:contents">
+      <div class="w-1/4 text-center">Date</div>
+    </div>
+    <div class="flex justify-between flex-1 px-2 md:px-10 lg:px-20 md:w-2/3 w-full m-2">
+      <div class=" text-center md:ml-8 relative md:-left-6">Team 1</div>
+      
+      <div class="text-center lg:mx-6 relative md:-right-40 -right-12">Team 2</div> 
+
+      <div class=" text-center relative  -right-5">Result</div>
+    </div>
+</div>
+
+  <div class="m-8 bg-white  py-2 shadow-black shadow-sm">
+    <div
+      class="rounded-xl border-slate-800 border-2 h-32 m-3 flex shadow-lg hover:shadow-2xl transition duration-300 md:flex-row flex-col">
+      <div id="matchdate" class="flex-2 bg-gradient-to-r from-blue-950 to-blue-500  text-white text-lg font-bold p-2 rounded-l-xl md:w-1/4 w-full">
+        12th Jan 2024
+      </div>
+      <div id="teams" class="flex justify-between flex-1 px-4 sm:p-3 md:px-10 lg:px-20 bg-slate-100 md:w-2/3 w-full">
+        <div id="team1" class="place-content-center text-center md:mr-4 mr-2">
+          <img src="csk.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">CSK</span>
+        </div>
+        <div id="vs" class="md:mx-4 mx-2 mt-2 ">
+          <img src="vs.png" class="md:h-20 rounded-full h-14" alt="">
+        </div>
+        <div id="team2" class="place-content-center text-center md:ml-4 ml-2">
+          <img src="mi.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">MI</span>
+        </div>
+        <div class="md:mt-0 mt-4">
+          <a href="#">
+            <img src="result.jpg" class="h-10 md:mt-10">
+          </a>
+        </div>
+      </div>
+</div>
+    <div
+      class="rounded-xl border-slate-800 border-2 h-32 m-3 flex shadow-lg hover:shadow-2xl transition duration-300 md:flex-row flex-col">
+      <div id="matchdate" class="flex-2 bg-gradient-to-r from-blue-950 to-blue-500  text-white text-lg font-bold p-2 rounded-l-xl md:w-1/4 w-full">
+        12th Jan 2024
+      </div>
+      <div id="teams" class="flex justify-between flex-1 px-4 sm:p-3 md:px-10 lg:px-20 bg-slate-100 md:w-2/3 w-full">
+        <div id="team1" class="place-content-center text-center md:mr-4 mr-2">
+          <img src="csk.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">CSK</span>
+        </div>
+        <div id="vs" class="md:mx-4 mx-2 mt-2 ">
+          <img src="vs.png" class="md:h-20 rounded-full h-14" alt="">
+        </div>
+        <div id="team2" class="place-content-center text-center md:ml-4 ml-2">
+          <img src="mi.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">MI</span>
+        </div>
+        <div class="md:mt-0 mt-4">
+          <a href="#">
+            <img src="result.jpg" class="h-10 md:mt-10">
+          </a>
+        </div>
+      </div>
+</div>
+    <div
+      class="rounded-xl border-slate-800 border-2 h-32 m-3 flex shadow-lg hover:shadow-2xl transition duration-300 md:flex-row flex-col">
+      <div id="matchdate" class="flex-2 bg-gradient-to-r from-blue-950 to-blue-500  text-white text-lg font-bold p-2 rounded-l-xl md:w-1/4 w-full">
+        12th Jan 2024
+      </div>
+      <div id="teams" class="flex justify-between flex-1 px-4 sm:p-3 md:px-10 lg:px-20 bg-slate-100 md:w-2/3 w-full">
+        <div id="team1" class="place-content-center text-center md:mr-4 mr-2">
+          <img src="csk.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">CSK</span>
+        </div>
+        <div id="vs" class="md:mx-4 mx-2 mt-2 ">
+          <img src="vs.png" class="md:h-20 rounded-full h-14" alt="">
+        </div>
+        <div id="team2" class="place-content-center text-center md:ml-4 ml-2">
+          <img src="mi.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">MI</span>
+        </div>
+        <div class="md:mt-0 mt-4">
+          <a href="#">
+            <img src="result.jpg" class="h-10 md:mt-10">
+          </a>
+        </div>
+      </div>
+</div>
+    <div
+      class="rounded-xl border-slate-800 border-2 h-32 m-3 flex shadow-lg hover:shadow-2xl transition duration-300 md:flex-row flex-col">
+      <div id="matchdate" class="flex-2 bg-gradient-to-r from-blue-950 to-blue-500  text-white text-lg font-bold p-2 rounded-l-xl md:w-1/4 w-full">
+        12th Jan 2024
+      </div>
+      <div id="teams" class="flex justify-between flex-1 px-4 sm:p-3 md:px-10 lg:px-20 bg-slate-100 md:w-2/3 w-full">
+        <div id="team1" class="place-content-center text-center md:mr-4 mr-2">
+          <img src="csk.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">CSK</span>
+        </div>
+        <div id="vs" class="md:mx-4 mx-2 mt-2 ">
+          <img src="vs.png" class="md:h-20 rounded-full h-14" alt="">
+        </div>
+        <div id="team2" class="place-content-center text-center md:ml-4 ml-2">
+          <img src="mi.jpg" class="md:h-20 rounded-full h-8 border-2 border-slate-800">
+          <span class="text-lg font-bold text-slate-800">MI</span>
+        </div>
+        <div class="md:mt-0 mt-4">
+          <a href="#">
+            <img src="result.jpg" class="h-10 md:mt-10">
+          </a>
+        </div>
+      </div>
+</div>
+<!-- FOOTER START -->
+
+<div class="container mx-auto px-4 py-6 bg-[#1f306b]">
+  <div class="flex justify-between flex-wrap ">
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">TEAM</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li class="hover:underline"><a href="">Chennai Super Kings</a></li>
+        <li class="hover:underline"><a href="">Delhi Capitals</a></li>
+        <li class="hover:underline"><a href="">Gujarat Titans</a></li>
+        <li class="hover:underline"><a href="">Kolkata Knight Riders</a></li>
+        <li class="hover:underline"><a href="">Lucknow Super Giants</a></li>
+        <li class="hover:underline"><a href="">Mumbai Indians</a></li>
+        <li class="hover:underline"><a href="">Punjab Kings</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">ABOUT</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li class="hover:underline"><a href="">About Us</a></li>
+        <li class="hover:underline"><a href="">Anti Corruption Policy</a></li>
+        <li class="hover:underline"><a href="">Anti Doping Policy</a></li>
+        <li class="hover:underline"><a href="">TUE Application Form</a></li>
+        <li class="hover:underline"><a href="">Anti Discrimination Policy</a></li>
+        <li class="hover:underline"><a href="">Clothing And Equipment Regulations</a></li>
+        <li class="hover:underline"><a href="">Code Of Conduct For Players And Teams Officials</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">GUIDELINES</h2>
+      <ul class="list-disc list-inside text-gray-400 ">
+        <li class="hover:underline"><a href="">IPL Code Of Conduct For Match Officials</a></li>
+        <li class="hover:underline"><a href="">Brand And Protection Guidelines</a></li>
+        <li class="hover:underline"><a href="">Governing Council</a></li>
+        <li class="hover:underline"><a href="">Match Playing Conditions</a></li>
+        <li class="hover:underline"><a href="">PMOA Minimum Standard</a></li>
+        <li class="hover:underline"><a href="">Suspect Action Policy</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
+      <ul class="list-disc list-inside text-gray-400 ">
+        <li class="hover:underline"><a href="">Contact Us</a></li>
+        <li class="hover:underline"><a href="">Sponsorship</a></li>
+        <li class="hover:underline"><a href="">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER END -->
+</body>
+<Script src="matches.js"></Script>
+<script src="common.js"></script>
+</html>
