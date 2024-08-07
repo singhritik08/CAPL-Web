@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----stylesheet link----- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>CAPL mi</title>
+</head>
+
+<body class="italic">
+    <!-- NAVBAR STRAT-->
+    <div class="bg-[#1f306b] h-20 shadow-lg shadow-slate-600 ">
+        <div class="flex place-content-between">
+            <div class="flex items-center">
+                <i class="fa-solid fa-bars text-white text-3xl ml-5 lg:opacity-0 " id="bar"></i>
+
+                <img src="../assets/logo1.png" alt="" class="h-20 ml-10 ">
+                <div>
+                    <h3 class="text-white text-l font-bold">Coading Age </h3>
+                    <h3 class="text-white text-l font-bold">Premier</h3>
+                    <h3 class="text-white text-l font-bold">League</h3>
+                </div>
+            </div>
+            <div
+                class="z-40  font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-64  lg:ml-10 hidden md:hidden">
+                <ul class="flex">
+                    <li>
+                        <a href="" class="pr-10 ">MATCHES</a>
+                    </li>
+                    <li>
+                        <a href="" class="pr-10 ">STATS</a>
+                    </li>
+
+                    <a href="" class="pr-10 ">POINTS TABLE</a>
+                </ul>
+                <div class="main-wrapper relative group z-40">
+                    <button class="pr-10  ">MORE</button>
+                    <ul class="dropdown-menu group-hover:block hidden absolute mt-3">
+                        <li>
+                            <a href=""
+                                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-t-lg place-content-center border-b-2  hover:pl-10 hover:text-2xl ">TEAMS</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">PHOTOS</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">RESULTS</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-b-lg place-content-center  hover:pl-10 hover:text-2xl">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass text-white  text-2xl font-bold mt-8 mr-5" id="icon"></i>
+            </div>
+
+        </div>
+        <div class=" bg-transparent  flex-col justify-center hidden z-20" id="search">
+            <div class="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+                <div class="overflow-hidden z-0 rounded-full relative p-3">
+                    <form role="form" class="relative flex z-50 bg-white rounded-full">
+                        <input type="text" placeholder="enter your search here"
+                            class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none">
+                        <button
+                            class="bg-[#2e3d71] text-white rounded-full font-semibold px-8 py-4 hover:bg-[#1f306b] focus:bg-[#2e3d71] focus:outline-none">Search</button>
+                    </form>
+                    <div class="glow glow-1 z-10 bg-pink-400 absolute"></div>
+                    <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
+                    <div class="glow glow-3 z-30 bg-yellow-400 absolute"></div>
+                    <div class="glow glow-4 z-40 bg-[#1f306b] absolute"></div>
+                </div>
+            </div>
+        </div>
+        <div class="z-20  bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[390px]" id="sidebar">
+            <ul>
+                <li>
+                    <a href="" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
+                </li>
+                <li>
+                    <a href="" class="pl-10 border-b-2 block h-12 place-content-center">STATS</a>
+                </li>
+
+                <a href="" class="pl-10 border-b-2 block h-12 place-content-center">POINTS TABLE</a>
+            </ul>
+            <div class="main-wrapper relative group z-40  ">
+                <button class="pl-10  block h-12">MORE</button>
+                <ul class="dropdown-menu group-hover:block hidden absolute ">
+                    <li>
+                        <a href=""
+                            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-2xl ml-4">TEAMS</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">RESULTS</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-2xl ml-4">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- HERO SECTION START -->
+    <section class="h-auto w-full bg-center bg-cover" style="background-image: url('../assets/bgimg.jpg');">
+        <div class="container">
+            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../assets/mi.jpeg');">
+            </div>
+            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../assets/kkr.jpeg');">
+            </div>
+            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../assets/csk.jpg');">
+            </div>
+            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../assets/rr.png');">
+            </div>
+            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../assets/rcb.png');">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="flex p-8 justify-center relative overflow-hidden">
+                <img class="h-[100px] rounded-lg shadow-lg transition shadow-white hover:translate-y-2 duration-100 imgt animate-spin" src="../assets/mi.jpeg" id="teamimg" alt="Team Image">
+
+                <h1 class="text-4xl text-white p-4 font-bold textshadow">Team Name</h1>
+            </div>
+            <div class="p-8">
+                <div class="bg-sky-950 text-white p-4 mb-1 text-lg rounded hover:shadow-xl border-red-50 hover:shadow-white">
+                    <span class="text-yellow-400 font-bold text-xl">Owner &nbsp; &nbsp;- </span>Rishi Sir</div>
+                <div class="bg-sky-950 text-white p-4 mb-1 text-lg rounded hover:shadow-xl hover:shadow-white flex">
+                    <span class="text-yellow-400 font-bold text-xl" >Coach &nbsp; &nbsp; - </span> <div id="coach">&nbsp;Abhishek Bhaiya</div></div>
+                <div class="bg-sky-950 text-white p-4 mb-1 text-lg rounded hover:shadow-xl hover:shadow-white flex">
+                    <span class="text-yellow-400 font-bold text-xl">Captain &nbsp; - </span> <div id="captain">&nbsp;Abhishek Bhaiya</div></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- HERO SECTION END -->
+
+    <!-- BATTER SECTION START -->
+    <div class="bg-gray-100">
+    <section class=" ">
+        <div class="text-2xl h-12 w-40 m-10 font-bold place-items-center text-indigo-900 hover:bg-orange-500 
+        hover:text-white rounded-br-lg rounded-tl-lg p-3 animate-ping">BATTERs</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 m-5 ">
+            <div class="bg-white rounded-lg items-center justify-center ">
+                <div class="flex justify-between mt-3">
+                    <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center ml-5"></i>
+                    <i class="fa-solid fa-c bg-slate-400 p-2 rounded-full mr-5"></i>
+                </div>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/msd.webp">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BATTER SECTION END -->
+
+
+    <!-- ALL ROUNDERs SECTION START -->
+    <section class=" ">
+        <div class="text-2xl h-12 w-64 m-10 font-bold place-items-center text-indigo-900 hover:bg-orange-500 hover:text-white rounded-br-lg rounded-tl-lg p-3">ALL-ROUNDERS</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 m-5 ">
+            <div class="bg-white rounded-lg items-center justify-center ">
+                <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ALL ROUNDERs SECTION END -->
+
+    <!-- BOWLERs SECTION START -->
+    <section class=" ">
+        <div class="text-2xl h-12 w-40 m-10 font-bold place-items-center text-indigo-900 hover:bg-orange-500 hover:text-white rounded-br-lg rounded-tl-lg p-3">BOWLERs</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 m-5 ">
+            <div class="bg-white rounded-lg items-center justify-center ">
+                <i class="fa-solid fa-baseball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                <i class="fa-solid fa-baseball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg items-center justify-center ">
+                    <i class="fa-solid fa-baseball text-2xl justify-center mt-3 ml-5"></i>
+                <div class="flex justify-center items-center md:flex-col">
+                    <img class="h-[220px]" src="../assets/rohit.png">
+                    <div class="flex justify-center">
+                        <div><h1 class="text-2xl font-bold">Name</h1>
+                             <h2 class="text-lg">Batter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BOWLERs SECTION END -->
+    </div>
+
+
+    <!-- FOOTER START -->
+    <div class=" mx-auto px-4 py-6 w-full bg-[#1f306b]">
+        <div class="flex justify-between flex-wrap">
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">TEAM</h2>
+            <ul class="list-disc list-inside text-gray-400">
+              <li class="hover:underline"><a href="">Chennai Super Kings</a></li>
+              <li class="hover:underline"><a href="">Delhi Capitals</a></li>
+              <li class="hover:underline"><a href="">Gujarat Titans</a></li>
+              <li class="hover:underline"><a href="">Kolkata Knight Riders</a></li>
+              <li class="hover:underline"><a href="">Lucknow Super Giants</a></li>
+              <li class="hover:underline"><a href="">Mumbai Indians</a></li>
+              <li class="hover:underline"><a href="">Punjab Kings</a></li>
+            </ul>
+          </div>
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">ABOUT</h2>
+            <ul class="list-disc list-inside text-gray-400">
+              <li class="hover:underline"><a href="">About Us</a></li>
+              <li class="hover:underline"><a href="">Anti Corruption Policy</a></li>
+              <li class="hover:underline"><a href="">Anti Doping Policy</a></li>
+              <li class="hover:underline"><a href="">TUE Application Form</a></li>
+              <li class="hover:underline"><a href="">Anti Discrimination Policy</a></li>
+              <li class="hover:underline"><a href="">Clothing And Equipment Regulations</a></li>
+              <li class="hover:underline"><a href="">Code Of Conduct For Players And Teams Officials</a></li>
+            </ul>
+          </div>
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">GUIDELINES</h2>
+            <ul class="list-disc list-inside text-gray-400 ">
+              <li class="hover:underline"><a href="">IPL Code Of Conduct For Match Officials</a></li>
+              <li class="hover:underline"><a href="">Brand And Protection Guidelines</a></li>
+              <li class="hover:underline"><a href="">Governing Council</a></li>
+              <li class="hover:underline"><a href="">Match Playing Conditions</a></li>
+              <li class="hover:underline"><a href="">PMOA Minimum Standard</a></li>
+              <li class="hover:underline"><a href="">Suspect Action Policy</a></li>
+            </ul>
+          </div>
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
+            <ul class="list-disc list-inside text-gray-400 ">
+              <li class="hover:underline"><a href="">Contact Us</a></li>
+              <li class="hover:underline"><a href="">Sponsorship</a></li>
+              <li class="hover:underline"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER END -->
+    
+    <script src="try.js"></script>
+</body>
+
+</html>
