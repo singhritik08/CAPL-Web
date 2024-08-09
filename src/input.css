@@ -190,7 +190,7 @@
         width: 250px;
         margin: 0 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, -1);
-        transition: 1s;
+        transition: 5s;
         border-radius: 5px;
         display: block;
         background-size: cover;
